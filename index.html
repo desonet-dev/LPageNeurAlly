@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeurAlly - Equilibrando o que vem de dentro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="LogoTCC.svg" alt="Logo do projeto">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="contato.html" class="btn-contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section class="secao-sobre">
+            <div class="container-secao">
+                <h2 class="titulo-secao">O que é NeurAlly?</h2>
+                <div class="grade-sobre">
+                    <div class="conteudo-texto-sobre">
+                        <p class="texto-sobre">
+                            NeurAlly é um aplicativo focado em saúde mental, sendo possível realizar o agendamento de
+                            consultas, junto com um diário emocional. No software, cada usuário poderá pesquisar por um
+                            profissional desejado, e marcar uma consulta, seja ela online, presencial, ou híbrida.
+                        </p>
+                    </div>
+                    <div class="wrapper-imagem-sobre">
+                        <img src="https://www.psicologo.com.br/wp-content/uploads/psiquiatra-ou-psicologo-qual-profissional-procurar-destacada-1024x538.jpg"
+                            alt="Consulta com Profissional" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-previa-app">
+            <div class="container-secao">
+                <div class="cartao-previa-app">
+
+                    <button class="botao-nav-carrossel botao-anterior" id="prev-btn" aria-label="Anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m15 18-6-6 6-6" />
+                        </svg>
+                    </button>
+
+                    <div class="area-carrossel-app">
+                        <div class="telas-app" id="app-screens">
+                            <div class="cartao-tela">
+                                <img src="./Home.png" alt="Home do Usuário" />
+                            </div>
+                            <div class="cartao-tela">
+                                <img src="./Conversa.png" alt="Chat com Doutora" />
+                            </div>
+                            <div class="cartao-tela">
+                                <img src="./TelaAgendamento.png" alt="Agendamento Dr. Thiago" />
+                            </div>
+                            <div class="cartao-tela">
+                                <img src="./DiarioEmocional.png" alt="Diário Emocional" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="botao-nav-carrossel botao-proximo" id="next-btn" aria-label="Próximo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-recursos">
+            <div class="container-secao">
+                <div class="cartao-recursos">
+                    <ul class="grade-recursos">
+                        <li>Conexão com profissionais de saúde mental qualificados;</li>
+                        <li>Ferramentas para saúde psicológica;</li>
+                        <li>Possibilidade de consultas à distância;</li>
+                        <li>Praticidade e acessibilidade.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-secao">
+            <div class="divisor"></div>
+        </div>
+
+        <section class="secao-depoimentos">
+            <div class="container-secao">
+                <div class="carrossel-depoimentos">
+                    <div class="wrapper-depoimento" id="testimonial-wrapper">
+
+                        <div class="cartao-depoimento">
+                            <p class="citacao-depoimento">
+                                "Usei este app e me ajudou muito a encontrar profissionais atenciosos e qualificados de
+                                acordo com o meu perfil, além de aprender a regular minhas crises de ansiedade."
+                            </p>
+                            <span class="autor-depoimento">- Diego Ernesto</span>
+                            <div class="estrelas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="cartao-depoimento">
+                            <p class="citacao-depoimento">
+                                "A facilidade para encontrar psicólogos especializados e agendar consultas online mudou
+                                minha rotina. Excelente experiência!"
+                            </p>
+                            <span class="autor-depoimento">- Juliana Ramos</span>
+                            <div class="estrelas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="cartao-depoimento">
+                            <p class="citacao-depoimento">
+                                "O diário de emoções e os jogos de relaxamento são incríveis. Consigo me acompanhar
+                                todos os dias de forma simples."
+                            </p>
+                            <span class="autor-depoimento">- Carlos Eduardo</span>
+                            <div class="estrelas">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pontos-carrossel" id="testimonial-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-download">
+            <div class="container-secao">
+                <div class="cartao-download">
+                    <h3 class="titulo-download">Instale nosso Aplicativo</h3>
+                    <div class="conteudo-download">
+
+                        <div class="selo-marca-app">
+                            <div class="espaco-logo pequeno">
+                                <img src="LogoTCC.svg" alt="Logo NeurAlly"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                                <div class="reserva-logo">
+                                </div>
+                            </div>
+                            <div class="info-marca-app">
+                                <h4>NeurAlly</h4>
+                                <span>Consultas por app</span>
+                            </div>
+                        </div>
+
+                        <div class="botoes-loja">
+                            <a href="#" class="botao-loja google-play" aria-label="Baixar na Google Play">
+                                <i class="fa-brands fa-google-play"></i>
+                            </a>
+                            <a href="#" class="botao-loja app-store" aria-label="Baixar na App Store">
+                                <i class="fa-brands fa-apple"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape-site">
+        <div class="container-secao">
+            <p>&copy; 2026 NeurAlly Inc. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
