@@ -63,6 +63,7 @@ body {
 .btn-contato:hover,
 .nav-link.active {
     opacity: 0.8;
+    border-bottom: 2px solid #f39c12;
 }
 
 .menu-toggle {
@@ -102,7 +103,7 @@ body {
 .conteudo-cabecalho {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 25px auto;
     padding: 0 24px;
 }
 
@@ -359,7 +360,7 @@ body {
 
 .divisor {
     height: 2px;
-    background-color: #b0c4de;
+    background-color: #f39c12;
     margin: 30px auto;
     width: 100%;
     border-radius: 2px;
