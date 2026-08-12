@@ -20,7 +20,7 @@ body {
 }
 
 .btn-outline-primary:hover {
-    background-color: #6c9ce9 !important;
+    background-color: #6c9ce9;
     color: #ffffff !important;
 }
 
@@ -122,6 +122,24 @@ body {
     height: 80px;
     background-color: #e2e8f8;
     color: #6c9ce9;
+}
+
+.container-termo i,
+.container-termo a {
+    color: #ffffff;
+}
+
+.container-termo:hover i,
+.container-termo:hover a {
+    color: #f39c12;
+}
+
+.redes-integrante a {
+    color: #ffffff;
+}
+
+.redes-integrante a:hover {
+    color: #f39c12
 }
 
 @media (max-width: 1050px) {
