@@ -5,207 +5,226 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NeurAlly - Equilibrando o que vem de dentro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <img src="LogoTCC.svg" alt="Logo do projeto">
-            </a>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="LogoTCC.svg" alt="Logo do projeto" height="40">
+                </a>
 
-            <nav class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link active">Início</a></li>
-                    <li><a href="contato.html" class="btn-contato">Contato</a></li>
-                </ul>
-            </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="conteudo-principal">
 
-        <section class="secao-sobre">
-            <div class="container-secao">
-                <h2 class="titulo-secao">O que é NeurAlly?</h2>
-                <div class="grade-sobre">
-                    <div class="conteudo-texto-sobre">
-                        <p class="texto-sobre">
+        <section class="secao-sobre py-5">
+            <div class="container">
+                <h2 class="titulo-secao text-center mb-4">O que é NeurAlly?</h2>
+                <div class="row align-items-center g-4">
+                    <div class="col-md-6">
+                        <p class="texto-sobre lead">
                             NeurAlly é um aplicativo focado em saúde mental, sendo possível realizar o agendamento de
                             consultas, junto com um diário emocional. No software, cada usuário poderá pesquisar por um
                             profissional desejado, e marcar uma consulta, seja ela online, presencial, ou híbrida.
                         </p>
                     </div>
-                    <div class="wrapper-imagem-sobre">
+                    <div class="col-md-6 text-center">
                         <img src="https://www.psicologo.com.br/wp-content/uploads/psiquiatra-ou-psicologo-qual-profissional-procurar-destacada-1024x538.jpg"
-                            alt="Consulta com Profissional" />
+                            alt="Consulta com Profissional" class="img-fluid rounded shadow" />
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="secao-previa-app">
-            <div class="container-secao">
-                <div class="cartao-previa-app">
-
-                    <button class="botao-nav-carrossel botao-anterior" id="prev-btn" aria-label="Anterior">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="m15 18-6-6 6-6" />
-                        </svg>
+        <section class="secao-previa-app py-5 bg-light">
+            <div class="container">
+                <div class="cartao-previa-app d-flex align-items-center justify-content-between">
+                    <button class="btn btn-outline-secondary botao-anterior" id="prev-btn" aria-label="Anterior">
+                        <i class="fa-solid fa-chevron-left"></i>
                     </button>
 
-                    <div class="area-carrossel-app">
-                        <div class="telas-app" id="app-screens">
-                            <div class="cartao-tela">
-                                <img src="./Home.png" alt="Home do Usuário" />
+                    <div class="area-carrossel-app overflow-hidden">
+                        <div class="telas-app d-flex gap-3" id="app-screens">
+                            <div class="cartao-tela"><img src="./Home.png" alt="Home do Usuário" class="img-fluid" />
                             </div>
-                            <div class="cartao-tela">
-                                <img src="./Conversa.png" alt="Chat com Doutora" />
-                            </div>
-                            <div class="cartao-tela">
-                                <img src="./TelaAgendamento.png" alt="Agendamento Dr. Thiago" />
-                            </div>
-                            <div class="cartao-tela">
-                                <img src="./DiarioEmocional.png" alt="Diário Emocional" />
-                            </div>
+                            <div class="cartao-tela"><img src="./Conversa.png" alt="Chat com Doutora"
+                                    class="img-fluid" /></div>
+                            <div class="cartao-tela"><img src="./TelaAgendamento.png" alt="Agendamento Dr. Thiago"
+                                    class="img-fluid" /></div>
+                            <div class="cartao-tela"><img src="./DiarioEmocional.png" alt="Diário Emocional"
+                                    class="img-fluid" /></div>
                         </div>
                     </div>
 
-                    <button class="botao-nav-carrossel botao-proximo" id="next-btn" aria-label="Próximo">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="m9 18 6-6-6-6" />
-                        </svg>
+                    <button class="btn btn-outline-secondary botao-proximo" id="next-btn" aria-label="Próximo">
+                        <i class="fa-solid fa-chevron-right"></i>
                     </button>
-
                 </div>
             </div>
         </section>
 
-        <section class="secao-recursos">
-            <div class="container-secao">
-                <div class="cartao-recursos">
-                    <ul class="grade-recursos">
-                        <li>Conexão com profissionais de saúde mental qualificados;</li>
-                        <li>Ferramentas para saúde psicológica;</li>
-                        <li>Possibilidade de consultas à distância;</li>
-                        <li>Praticidade e acessibilidade.</li>
-                    </ul>
+        <section class="secao-recursos py-5">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-3 border rounded text-center h-100 bg-white shadow-sm">
+                            Conexão com profissionais de saúde mental qualificados
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-3 border rounded text-center h-100 bg-white shadow-sm">
+                            Ferramentas para saúde psicológica
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-3 border rounded text-center h-100 bg-white shadow-sm">
+                            Possibilidade de consultas à distância
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-3 border rounded text-center h-100 bg-white shadow-sm">
+                            Praticidade e acessibilidade
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <div class="container-secao">
-            <div class="divisor"></div>
+        <div class="container my-5">
+            <hr class="border-warning border-2 opacity-100 m-0">
         </div>
 
-        <section class="secao-depoimentos">
-            <div class="container-secao">
-                <div class="carrossel-depoimentos">
-                    <div class="wrapper-depoimento" id="testimonial-wrapper">
-
-                        <div class="cartao-depoimento">
-                            <p class="citacao-depoimento">
-                                "Usei este app e me ajudou muito a encontrar profissionais atenciosos e qualificados de
-                                acordo com o meu perfil, além de aprender a regular minhas crises de ansiedade."
-                            </p>
-                            <span class="autor-depoimento">- Diego Ernesto</span>
-                            <div class="estrelas">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+        <section class="secao-recursos py-5">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-3 border rounded text-center h-100 bg-white shadow-sm">
+                            <p>Conexão com profissionais de saúde mental qualificados</p>
                         </div>
-
-                        <div class="cartao-depoimento">
-                            <p class="citacao-depoimento">
-                                "A facilidade para encontrar psicólogos especializados e agendar consultas online mudou
-                                minha rotina. Excelente experiência!"
-                            </p>
-                            <span class="autor-depoimento">- Juliana Ramos</span>
-                            <div class="estrelas">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-
-                        <div class="cartao-depoimento">
-                            <p class="citacao-depoimento">
-                                "O diário de emoções e os jogos de relaxamento são incríveis. Consigo me acompanhar
-                                todos os dias de forma simples."
-                            </p>
-                            <span class="autor-depoimento">- Carlos Eduardo</span>
-                            <div class="estrelas">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-
                     </div>
-                    <div class="pontos-carrossel" id="testimonial-dots"></div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-3 border rounded text-center h-100 bg-white shadow-sm">
+                            <p>Ferramentas para saúde psicológica</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-3 border rounded text-center h-100 bg-white shadow-sm">
+                            <p>Possibilidade de consultas à distância</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="secao-download">
-            <div class="container-secao">
-                <div class="cartao-download">
-                    <h3 class="titulo-download">Instale nosso Aplicativo</h3>
-                    <div class="conteudo-download">
+        <section class="py-5 bg-light border-top border-bottom">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">O que nossos usuários dizem</h2>
 
-                        <div class="selo-marca-app">
-                            <div class="espaco-logo pequeno">
-                                <img src="LogoTCC.svg" alt="Logo NeurAlly"
-                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-                                <div class="reserva-logo">
+                <div class="carrossel-depoimentos mx-auto" style="max-width: 700px;">
+                    <div class="wrapper-depoimento d-flex" id="testimonial-wrapper">
+
+                        <div class="cartao-depoimento w-100 flex-shrink-0 px-3">
+                            <div class="card border-0 shadow-sm p-4 text-center">
+                                <div class="text-warning mb-2 fs-5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                 </div>
-                            </div>
-                            <div class="info-marca-app">
-                                <h4>NeurAlly</h4>
-                                <span>Consultas por app</span>
+                                <p class="fs-5 italic mb-3">"O aplicativo mudou totalmente a forma como organizo minha
+                                    rotina diária. A interface é muito amigável!"</p>
+                                <h3 class="h6 fw-bold mb-0 text-primary">Diego Ernesto</h3>
+                                <span class="text-muted small">Usuário do NeurAlly</span>
                             </div>
                         </div>
 
-                        <div class="botoes-loja">
-                            <a href="#" class="botao-loja google-play" aria-label="Baixar na Google Play">
-                                <i class="fa-brands fa-google-play"></i>
-                            </a>
-                            <a href="#" class="botao-loja app-store" aria-label="Baixar na App Store">
-                                <i class="fa-brands fa-apple"></i>
-                            </a>
+                        <div class="cartao-depoimento w-100 flex-shrink-0 px-3">
+                            <div class="card border-0 shadow-sm p-4 text-center">
+                                <div class="text-warning mb-2 fs-5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="fs-5 italic mb-3">"Excelente iniciativa para o TCC. As funcionalidades de
+                                    acompanhamento ajudam demais no dia a dia."</p>
+                                <h3 class="h6 fw-bold mb-0 text-primary">Alícia Stefany</h3>
+                                <span class="text-muted small">Educadora</span>
+                            </div>
+                        </div>
+
+                        <div class="cartao-depoimento w-100 flex-shrink-0 px-3">
+                            <div class="card border-0 shadow-sm p-4 text-center">
+                                <div class="text-warning mb-2 fs-5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="fs-5 italic mb-3">"Design limpo, navegação fluida e proposta incrível.
+                                    Parabéns a toda a equipe desenvolvedora!"</p>
+                                <h3 class="h6 fw-bold mb-0 text-primary">Fernanda Lima</h3>
+                                <span class="text-muted small">Psicóloga</span>
+                            </div>
                         </div>
 
                     </div>
                 </div>
+
+                <div id="testimonial-dots" class="d-flex justify-content-center gap-2 mt-4"></div>
+
             </div>
         </section>
 
     </main>
 
-    <footer class="rodape-site">
-        <div class="container-secao">
-            <p>&copy; 2026 NeurAlly Inc. Todos os direitos reservados.</p>
+    <footer class="rodape-site bg-primary text-white py-4 mt-auto rounded-top">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+
+            <div class="redes-integrante d-flex gap-3 fs-5">
+                <a href="tel:#" class="text-white"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:#" class="text-white"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <p class="mb-0 text-center fs-6">&copy; 2026 NeurAlly Inc. Todos os direitos reservados.</p>
+
+            <div class="redes-integrante d-flex align-items-center gap-2">
+                <i class="fa-solid fa-file-contract"></i>
+                <a href="#" class="text-white text-decoration-none fw-bold small">Termos de uso e serviço</a>
+            </div>
+
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
