@@ -135,10 +135,14 @@ body {
 }
 
 .redes-integrante a {
+    color: #6c9ce9;
+}
+
+.redes-rodape a {
     color: #ffffff;
 }
 
-.redes-integrante a:hover {
+.redes-integrante a:hover, .redes-rodape a:hover {
     color: #f39c12
 }
 
